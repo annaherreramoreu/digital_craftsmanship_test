@@ -13,7 +13,7 @@ void spiral(float xc, float yc, float rot){
     float y = i/a * t * sin(t + rot);
     circle(xc + x, yc +y,i);
     stroke(255-(i*255/100),i*255/100,255);
-  // fill(255-(i*255/100),i*255/100,255);
+    
   }
 }
 
@@ -32,9 +32,9 @@ void draw(){
   float x=width/2;
   float y=height/2;
   spiral(x,y,0);
-  //spiral(x,y,PI/2);
-//  spiral(x,y,PI);
-//  spiral(x,y,3*PI/2);
+  spiral(x,y,PI/2);
+  spiral(x,y,PI);
+  spiral(x,y,3*PI/2);
   endRecord();
 }
   
